@@ -122,4 +122,4 @@ class CarState extends React.Component{
 //     )
 //   }
 
-render(<CarState />, document.getElementById('root'));
+render(<Test />, document.getElementById('root'));

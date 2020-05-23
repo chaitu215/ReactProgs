@@ -12,33 +12,38 @@ class test extends Component {
     constructor(props) {
         super(props)
 
+        //initializing props -- start
+        this.props = {propName : "testProp", propId : 1}
+        //initializing props -- end
+
         //initializing state -- start
-        this.state = {stateName : "testState", stateId : 1}
+        this.state = {stateName : this.props.propName, stateId : this.props.propId }
         //initializing state -- end
 
         //initializing variables -- start
         this.name = "local variable"
         this.id = 1
         //initializing variables -- end
+
     }
     // Constructor -- end
 
     changeState = () => {
-        //do not modify change directly
+        //do not modify state directly
         //Wrong -- this.state.stateName = "testStateChanged"
          this.setState({ stateName : "testStateChanged", stateId : 2})
     };
     
     //render method
-    render() {
+    render(props) {
     return(<div>
-        <h1>test component : {globalname}</h1>
-        <h2>State: {this.state.stateName} : {this.state.stateId}</h2>
-        <h3>list itmes</h3>
-        <li>{this.id} : {this.name}</li>
-        <br/>
-    <button onClick={this.changeState}>click here to change state</button>
-        </div>)
+           <h1>test component : {globalname}</h1>
+           <h2>State: {this.state.stateName} : {this.state.stateId}</h2>
+           <h3>list itmes</h3>
+           <li>{this.id} : {this.name}</li>
+           <br/>
+           <button onClick={this.changeState}>click here to change state</button>
+           </div>)
     }
 }
 
