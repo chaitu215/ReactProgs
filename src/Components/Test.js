@@ -35,7 +35,7 @@ class test extends Component {
     };
     
     //render method
-    render(props) {
+    render() {
     return(<div>
            <h1>test component : {globalname}</h1>
            <h2>State: {this.state.stateName} : {this.state.stateId}</h2>
