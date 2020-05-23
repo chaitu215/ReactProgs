@@ -9,8 +9,8 @@ var globalname = "global variable"
 
 class test extends Component {
   //Constructor -- start
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
 
         //initializing props -- start
         this.props = {propName : "testProp", propId : 1}
