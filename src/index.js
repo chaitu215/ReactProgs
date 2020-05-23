@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './welcome/Hello';
 import './style.css';
+import Test from './Components/Test';
 
 var x = "123"
 
@@ -44,4 +45,4 @@ class App2 extends React.Component{
   }
 }
 
-render(<App2 />, document.getElementById('root'));
+render(<Test />, document.getElementById('root'));
