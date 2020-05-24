@@ -7,7 +7,11 @@ import { render } from 'react-dom';
 var globalname = "global variable"
 // global variables -- end
 
-class test extends Component {
+//Note:  Always start component names with a capital letter
+//React treats components starting with lowercase letters as DOM tags
+
+// class component -- start
+class Test extends Component {
   //Constructor -- start
     constructor(props) {
         super(props)
@@ -38,7 +42,8 @@ class test extends Component {
     
     //render method
     render() {
-    return(<div>
+   // return describes what should appear on  screen
+   return(<div>
            <h1>test component : {globalname}</h1>
            <h2>State: {this.state.stateName} : {this.state.stateId}</h2>
            <h3>list itmes</h3>
@@ -50,4 +55,14 @@ class test extends Component {
     }
 }
 
-export default test;
+// class component -- ends
+
+//function component -- as this component is literally a java script functions
+function Test1(props) {
+return(<div><label>{props.name}</label>
+<h1>hello</h1></div>)
+}
+
+//function compoent -- end
+
+export default Test1;

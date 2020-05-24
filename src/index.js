@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './welcome/Hello';
 import './style.css';
-import Test from './Components/Test';
+import Test1 from './Components/Test';
 
 var x = "123"
 
@@ -122,4 +122,6 @@ class CarState extends React.Component{
 //     )
 //   }
 
-render(<Test name = "hello prop" />, document.getElementById('root'));
+const elem = <Test1 name = "test props from elements"/>
+
+render(elem, document.getElementById('root'));
