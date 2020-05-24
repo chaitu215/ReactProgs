@@ -12,10 +12,12 @@ class test extends Component {
     constructor(props) {
         super(props)
 
+        //props are passed to a component. props are unchangeable or Immutable
         //initializing props -- start
         this.props = {propName : "testProp", propId : 1}
         //initializing props -- end
 
+        //State is internal to a component
         //initializing state -- start
         this.state = {stateName : this.props.propName, stateId : this.props.propId }
         //initializing state -- end
@@ -41,6 +43,7 @@ class test extends Component {
            <h2>State: {this.state.stateName} : {this.state.stateId}</h2>
            <h3>list itmes</h3>
            <li>{this.id} : {this.name}</li>
+           <li>2 : {this.props.name}</li>
            <br/>
            <button onClick={this.changeState}>click here to change state</button>
            </div>)
