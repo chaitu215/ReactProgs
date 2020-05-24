@@ -21,7 +21,7 @@ class Test extends Component {
         this.props = {propName : "testProp", propId : 1}
         //initializing props -- end
 
-        //State is internal to a component
+        //State is internal to a component and this.state is always assigned inside a constructor
         //initializing state -- start
         this.state = {stateName : this.props.propName, stateId : this.props.propId }
         //initializing state -- end
