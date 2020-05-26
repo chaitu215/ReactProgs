@@ -4,6 +4,7 @@ import Hello from './welcome/Hello';
 import './style.css';
 import Test1 from './Components/Test';
 import Test3 from './Components/Test3';
+import ToggleTest from './Components/ToggleTest';
 
 var x = "123"
 
@@ -125,4 +126,4 @@ class CarState extends React.Component{
 
 const elem = <Test1 name = "test props from elements"/>
 
-render(<Test3/>, document.getElementById('root'));
+render(<ToggleTest/>, document.getElementById('root'));
