@@ -7,3 +7,5 @@ const BikeComponent = (props) => {
     </div>)
 }
 export default BikeComponent;
+
+//const elem = <Test1 name = "test props from elements"/>
